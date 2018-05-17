@@ -16,10 +16,9 @@ public class Main
 		Starter starter = new Starter();
         ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(3);
         executor.scheduleWithFixedDelay(new Runnable() {
-                  public void run() {
-                	  starter.executar();
-                	  System.out.println("passei");
-                  }
-            }, 0, 2000, TimeUnit.MILLISECONDS);
-	}
+        	public void run() {
+        		starter.executar();
+            }
+        }, 0, 2000, TimeUnit.MILLISECONDS);
+    }
 }
