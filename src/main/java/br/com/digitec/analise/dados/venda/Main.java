@@ -14,7 +14,7 @@ public class Main
 
 	private static void executar() {
 		Starter starter = new Starter();
-        ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(3);
+        ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(1);
         executor.scheduleWithFixedDelay(new Runnable() {
         	public void run() {
         		starter.executar();
